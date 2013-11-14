@@ -1,0 +1,182 @@
+$popup-blue: rgb(0,99,211);
+$popup-orange: rgb(195, 129, 44);
+$popup-purple: rgb(127,50,205);
+
+.blue {
+	color: $popup-blue;
+}
+.orange {
+	color: $popup-orange;
+}
+.purple {
+	color: $popup-purple;
+}
+
+body{
+	font-family: 'DINNextLTW01-UltraLight 706122', Helvetica, sans-serif;
+	font-weight: 100;
+	font-size: 22px;
+}
+header {
+	
+	margin: 2em 0 1em 0;
+	
+	h1 {
+		font-size: 75px;
+		color: $popup-blue;
+		text-transform: uppercase; 
+		strong {
+			font-size: 105px;
+		}
+	}
+	h2 {
+		font-size: 40px;
+		color: $popup-purple;
+	}
+	
+}
+h3 {
+	font-size: 75px;
+	line-height: .5em;
+	clear: both;
+	float: none;
+	display: block;
+	margin-bottom: 20px;
+
+}
+img.lead {
+	width: 100%;
+}
+p.lead {
+	font-size: 1.8em;
+	line-height: 1.1em;
+	float: left;
+	text-transform: lowercase;
+}
+p.intro {
+	font-size: 1.8em;
+	line-height: 1.1em;
+}
+.lead.conjunction {
+	color: black;
+	float: left;
+	margin: -25px 30px 0 0px;
+	font-size: 160px;
+	line-height: 180px;
+}
+ul.media {
+	position: relative;
+	color: $popup-orange;
+	float: none;
+	display: block;
+	margin: 1em 0 0 0;
+	max-width: 300px;
+	text-transform: uppercase;
+	clear: both;
+	line-height: .95em;
+	li{
+		display: inline-block;
+	}
+	li:after {
+		content: ',';
+	}
+}
+p.date {
+	clear: both;
+	padding: 1em 0 2em 0;
+	span {
+		display: inline-block;
+	}
+}
+span {
+	display: block;
+	margin: 0;
+}
+.preposition {
+	display: block;
+}
+.container {
+	min-width: 370px;
+	width: 60%;
+	max-width: 680px;
+	margin-bottom: 4em;
+	position: relative;
+}
+div.call {
+	margin-bottom: 30px;
+	h3 {
+		width: 100%;
+	}
+	.artists {
+		float: left;
+	}
+	.info {
+		float: left;
+		margin-left: 50px;
+	}
+	.lead {
+		font-size: 1.2em;
+	}
+}
+.fineprint {
+	clear: both;
+	margin-top: 1em;
+	line-height: 1.2em;
+	font-size: 18px;
+	ul {
+		margin-left: 0;
+	}
+	lh {
+		padding-left: 0;
+	}
+	ul li {
+		padding-left: 1em;
+		list-style: none;
+	}
+	ol {
+		margin: 1em 0;
+		padding-left: 1em;
+	}
+	ol li {
+		padding-left: 1em;
+		margin-bottom: .5em;
+	}
+}
+div.faqs {
+	margin-top: 50px;
+	h3{
+		font-size: 50px;
+		margin-bottom: 50px;
+	}
+	dt {
+		margin: .6em 0;
+		font-size: 1.2em;
+		font-weight: 100;
+	}
+	dd {
+		line-height: 1.2em;
+	}
+
+}
+.button {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	a{
+		padding: 20px;
+		font-size: 48px;
+		line-height: 50px;
+		border: 2px solid $popup-blue;
+	}
+}
+.link {
+	font-size: 1.8em;
+	margin: 1em 0;
+}
+
+@media (max-width: 940px) {
+	div.call .info {
+		margin-left: 0;
+		margin-bottom: 50px;
+	}
+	
+}
