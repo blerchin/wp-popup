@@ -1,0 +1,59 @@
+header.page-header {
+	position: relative;
+	width: 100%;
+	border: 0;
+	
+	h1 {
+		margin: 0 0 00px 0;
+		padding: 0;
+		font-size: 75px;
+		color: $popup-blue;
+		position: relative;
+		min-height: 50px;
+		img {
+			display: block;
+			background-color: #fff;
+			width: 1000%;
+			height: auto;
+			max-height: 300px;
+			margin: 0;
+		}
+		p {
+			margin-top: 1em;
+			position: absolute;
+			top: 0;
+			left: 40%;
+			z-index: -1;
+		}
+	}
+	.sub-head {
+
+	}
+	h2 {
+		font-size: 40px;
+	}
+	
+	.header-nav {
+		@media screen and (min-width: 581px){
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+		.menu {
+			font-size: 24px;
+			float: right;
+			margin-bottom: 10%;
+		}
+		ul {
+			list-style: none;
+			text-transform: lowercase;
+			@include popup_colors_children();
+		}
+		li {
+			text-align: right;
+			a {
+				color: inherit;
+			}
+		}
+	}
+}

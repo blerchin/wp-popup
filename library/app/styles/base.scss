@@ -1,0 +1,68 @@
+$popup-blue: rgb(0,99,211);
+$popup-orange: rgb(195, 129, 44);
+$popup-purple: rgb(127,50,205);
+
+.blue,
+.popup-blue {
+	color: $popup-blue;
+}
+.orange,
+.popup-orange {
+	color: $popup-orange;
+}
+.purple,
+.popup-purple {
+	color: $popup-purple;
+}
+
+body {
+	p, h1, h2, h3, h4, h5, a, span{
+		font-family: 'DIN Next W01', Helvetica, sans-serif;
+	}
+	h1, h2, h3, h4, h5 {
+		text-transform: lowercase;
+	}
+	h2 {
+		font-size: 42px;
+		margin-top: 80px;
+		color: $popup-blue;
+	}
+
+	font-weight: 100;
+	font-size: 22px;
+
+	.container {
+		position: relative;
+	}
+	p {
+		font-size: 20px;
+		color: $popup-orange;
+	}
+}
+@mixin popup_colors_children() {
+	& > * {
+		&:nth-child(3n+3) {
+			color: $popup-purple;
+		}
+		&:nth-child(3n+1) {
+			color: $popup-orange;
+		}
+		&:nth-child(3n+2) {
+			color: $popup-blue;
+		}
+	}
+}
+
+.footer {
+	@include popup_colors_children();
+	margin: 40px 0;
+	font-weight: 300;
+}
+
+@import '_header';
+@import '_sticky';
+@import '_artists';
+@import '_post';
+@import '_frame';
+@import '_mailchimp';
+

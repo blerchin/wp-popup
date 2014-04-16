@@ -1,0 +1,7 @@
+#mc_embed_signup {
+	max-width: 600px;
+	form {
+		@include popup_colors_children();
+	}
+}
+

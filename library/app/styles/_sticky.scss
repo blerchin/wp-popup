@@ -1,0 +1,30 @@
+.sticky-header {
+	max-height: 250px;
+	min-height: 70px;
+	overflow: hidden;
+	position: relative;
+	text-transform: lowercase;
+	margin: 0px 0px 10px 0px;
+	.sticky-title {
+		position: absolute;
+		bottom: 10px;
+		left: 20px;
+		padding: 10px 30px;
+		background-color: #eee;
+		opacity: 1;
+		a {
+			color: $popup-orange;
+		}
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+.sticky-post {
+	.post-body {
+		font-size: 180%;
+		font-weight: 100;
+		color: $popup-orange;
+	}
+}

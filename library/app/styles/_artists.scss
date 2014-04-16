@@ -1,0 +1,40 @@
+$statement-margin: 10px;
+.artist-list {
+	ul {
+		list-style: none;
+		width: 150px * 5;
+		padding-left: 0;
+		@include popup_colors_children();
+	}
+	li {
+		display: inline-block;
+		padding: 0 20px 10px 0;
+		overflow: visible;
+		position: relative;
+		cursor: pointer;
+		.thumb {
+			float: left;
+			margin: $statement-margin;
+		}
+
+		.artist-statement {
+			display: none;
+			background-color: #fff;
+			opacity: .95;
+		}
+		&.active .artist-statement {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 400px;
+			max-height: 400px;
+			overflow-y: scroll;
+			display: block;
+			z-index: 10;
+			p {
+				color: inherit;
+				margin: $statement-margin;
+			}
+		}
+	}
+}
