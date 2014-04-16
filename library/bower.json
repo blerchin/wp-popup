@@ -1,0 +1,23 @@
+{
+  "name": "wallapopup",
+  "version": "1.0.0",
+  "authors": [
+    "Ben Lerchin <ben@lerchin.com>"
+  ],
+  "description": "Website for wallaPopUP",
+  "license": "WTFPL",
+  "homepage": "http://wallapopup.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.scrollTo": "~1.4.11",
+    "jquery": "~2.1.0",
+    "underscore": "~1.6.0"
+  }
+}
