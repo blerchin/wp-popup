@@ -35,11 +35,13 @@
 			<div class="container">
 				<header class="page-header">
 				<div class="masthead row">
-					<h1 class="col-md-8">
-						<p>wallaPopUP</p>
-						<img src="<?php echo get_template_directory_uri() ?>/images/popup_banner.svg"
-							/>
-					</h1>
+					<div class="col-md-8">
+						<h1>
+							<p>wallaPopUP</p>
+							<img src="<?php echo get_template_directory_uri() ?>/images/wallapopup_logo.png"
+								/>
+						</h1>
+					</div>
 					<div class="col-md-4 header-nav">
 						<?php wp_nav_menu( array('theme_location' => 'header_nav',) ); ?>
 					</div>

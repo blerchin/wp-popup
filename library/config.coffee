@@ -21,13 +21,8 @@ exports.config =
 		stylesheets:
 				defaultExtension: 'less'
 				joinTo:
-					'stylesheets/app.css': /^(app|vendor)/
+					'stylesheets/app.css': /^(app|vendor|bower_components)/
 					'test/stylesheets/test.css': /^test/
-				order:
-					before: [
-						'vendor/styles/bootstrap/bootstrap.css',
-						'app/styles/base.scss'
-					]
 	
 	# Settings of web server that will run with `brunch watch [--server]`.
 	# server:

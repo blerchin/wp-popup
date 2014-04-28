@@ -4,6 +4,7 @@ header.page-header {
 	border: 0;
 	
 	h1 {
+		width: 100%;
 		margin: 0 0 00px 0;
 		padding: 0;
 		font-size: 75px;
@@ -13,7 +14,8 @@ header.page-header {
 		img {
 			display: block;
 			background-color: #fff;
-			width: 1000%;
+			max-width: 500px;
+			width: 100%;
 			height: auto;
 			max-height: 300px;
 			margin: 0;
@@ -36,7 +38,7 @@ header.page-header {
 	.header-nav {
 		@media screen and (min-width: 581px){
 			position: absolute;
-			bottom: 0;
+			top: 0;
 			right: 0;
 		}
 		.menu {
